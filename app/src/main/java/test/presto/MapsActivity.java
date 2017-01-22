@@ -82,9 +82,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void display(View view) throws IllegalStateException{
 
 
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
-        String message = "Hi";
-        intent.putExtra(EXTRA_MESSAGE, message);
+        Intent intent = new Intent(this, PrestoSettings.class);
+        startActivity(intent);
+
+        System.out.println(1+1);
+    }
+
+    public void filters(View view) throws IllegalStateException{
+
+
+        Intent intent = new Intent(this, PrestoFilter.class);
         startActivity(intent);
 
         System.out.println(1+1);

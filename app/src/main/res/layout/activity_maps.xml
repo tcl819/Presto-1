@@ -38,6 +38,7 @@
             android:layout_alignTop="@id/map"
             android:layout_alignParentBottom="true"
             android:layout_toLeftOf="@+id/settings"
+            android:onClick="filters"
             android:layout_weight="0.25" />
 
         <ImageView
